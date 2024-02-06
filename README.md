@@ -19,3 +19,4 @@ This part of our architecture help us build our user interface and the only part
 <h4>ViewModel:</h4>
 ViewModel object acts as an intermediate between View and the Model, meaning it provides data for the UI components like fragments or activities. It also includes an observable data holder called LiveData that allows ViewModel to inform or update the View whenever the data get updated. It is very crucial, mainly to keep our app from reloading on orientation changes. Which ultimately provides a great user experience.
 
+<br>
