@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/addEditAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addEditToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Add Edit Poet"
+            android:background="@color/primary_color"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/etPoetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Poet Title"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/shape_edit_man"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addEditAppBar"
+        />
+
+    <EditText
+        android:id="@+id/etPoetMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write here your poet..."
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:lines="8"
+        android:gravity="start"
+        android:background="@drawable/shape_edit_man"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPoetTitle"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
