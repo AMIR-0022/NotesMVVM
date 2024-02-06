@@ -5,9 +5,9 @@
 <h4>Model:</h4>
 Model is responsible for fetching the data either from the local SQLite database or from a web service. So it is further divided into various components.
 <br>
-  <b>  Repository</b> — It is responsible for handling the data information that includes where to get the data from either a web service or the persisted data models.
+  <b><u>Repository</u></b> — It is responsible for handling the data information that includes where to get the data from either a web service or the persisted data models.
 <br>
-  <b>  Room DB</b> — It is an ORM provided by Google, which provides an abstraction layer between the SQLite database and our data in the form of objects. It gives us errors in compile-time, which is much better than run-time error which difficult to track and debug.
+  <b><u>Room DB</u></b> — It is an ORM provided by Google, which provides an abstraction layer between the SQLite database and our data in the form of objects. It gives us errors in compile-time, which is much better than run-time error which difficult to track and debug.
   
 <br>
 
